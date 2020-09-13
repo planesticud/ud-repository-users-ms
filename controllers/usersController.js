@@ -26,10 +26,11 @@ usersController.createUsers = async (req, res) => {
   if(errors.length){
     log.error(`createUsers invalid body `)
       res.status(BAD_REQUEST).json({error: errors})
-  }
+  }else{
   dbQueries.insert('users', body)
+  res.sendStatus(CREATED)  
+}
   
-  res.sendStatus(CREATED)
 }
 
 usersController.deleteUsers = async (req, res) => {
