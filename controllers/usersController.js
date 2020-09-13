@@ -33,7 +33,6 @@ usersController.createUsers = async (req, res) => {
 }
 
 usersController.deleteUsers = async (req, res) => {
-  console.log(req.query)
   const { id } = req.query
   log.info(`deleteUsers id=${id} `)
   const del = await dbQueries.delete('users', id)
