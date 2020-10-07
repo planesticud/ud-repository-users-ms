@@ -32,5 +32,5 @@ Muchos de estos módulos se instalan por defecto cuando se crea el proyecto, y o
 ### [Routers](https://github.com/damillano93/ud-repository-users-ms/tree/develop/routers/)
 Es el folder que brinda la función de enrutar o redigir cada solicitud hecha a través de *HTML*, mediante un end-point, el cual hará uso de las funciones ubicadas en el controlador, para ejecutar una acción sobre la base de datos y el cual también retornará algún valor si es el caso.
 
-* **[routes.js](https://github.com/damillano93/ud-repository-users-ms/blob/develop/docs/routers-routes.md) :** Es el  que con base en las solicitudes o peticiones *HTML* hechas por el usuario (servicio o aplicación que consuma el API Rest expuesto), a los end-points configurados, hará la rediirección o enrutamiento de los mismos, para que servicios específicos ya definidos, realicen una tarea que puede o no retornar valores.
+* **[routes.js](https://github.com/damillano93/ud-repository-users-ms/blob/develop/docs/routers-routes.md) :** Es el  que con base en las solicitudes o peticiones *HTML* hechas por el usuario (servicio o aplicación que consuma el API Rest expuesto), a los end-points configit gurados, hará la rediirección o enrutamiento de los mismos, para que servicios específicos ya definidos, realicen una tarea que puede o no retornar valores.
 
