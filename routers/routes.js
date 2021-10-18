@@ -8,6 +8,8 @@ const { usersController } = require('../controllers')
 
 const router = express.Router()
 
+router.get(routers.USERS+"/contar", wrap(usersController.contarUsers))
+
 router.get(routers.USERS, wrap(usersController.listUsers))
 
 router.post(routers.USERS, wrap(usersController.createUsers))
