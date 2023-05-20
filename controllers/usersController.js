@@ -39,7 +39,7 @@ usersController.createUsers = async (req, res) => {
     res.status(BAD_REQUEST).json({ error: errors })
   } else {
     const newItem = await dbQueries.insert('users', body);
-    log.info(`user created with id=${newItem[0].id}`);
+   // log.info(`user created with id=${newItem[0].id}`);
     res.status(201).json(newItem);
   }
 }
