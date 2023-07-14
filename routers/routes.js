@@ -4,7 +4,7 @@ const { OK } = require('http-status-codes')
 const wrap = require('../wrap.js')
 const { routers } = require('../constants')
 
-const { usersController } = require('../controllers')
+const { usersController, rolesController } = require('../controllers')
 
 const router = express.Router()
 
@@ -17,6 +17,14 @@ router.post(routers.USERS, wrap(usersController.createUsers))
 router.put(routers.USERS, wrap(usersController.updateUsers))
 
 router.delete(routers.USERS, wrap(usersController.deleteUsers))
+
+router.get(routers.ROLES, wrap(rolesController.listRoles))
+
+router.post(routers.ROLES, wrap(rolesController.createRoles))
+
+router.put(routers.ROLES, wrap(rolesController.updateRoles))
+
+router.delete(routers.ROLES, wrap(rolesController.deleteRoles))
 
 router.get(routers.HEALTH, wrap(async (req, res) => {
     res.status(OK).json({ message: 'OK' })

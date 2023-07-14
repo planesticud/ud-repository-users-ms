@@ -1,0 +1,50 @@
+{
+    "name": "VISUALIZADOR",
+    "description": "Visualizar el recurso",
+    "action": "GET_RESOURCE"
+},
+{
+    "name": "VISUALIZADOR",
+    "description": "Valorar el recurso",
+    "action": "RATE_RESOURCE"
+},
+{
+    "name": "VISUALIZADOR",
+    "description": "Buscar recursos",
+    "action": "FIND_RESOURCE"
+},
+{
+    "name": "VISUALIZADOR",
+    "description": "Visualizar las estadísticas",
+    "action": "GET_STATISTICS"
+},
+{
+    "name": "VISUALIZADOR",
+    "description": "Agregar un recurso propio",
+    "action": "ADD_RESOURCE"
+},
+{
+    "name": "VISUALIZADOR",
+    "description": "Agregar un recurso de otra persona",
+    "action": "ADD_RESOURCE_THIRD_PARTY"
+},
+{
+    "name": "VISUALIZADOR",
+    "description": "Visualizar los criterios de validación del recurso conforme a los estándares de evaluación.",
+    "action": "GET_VALIDATION"
+},
+{
+    "name": "VISUALIZADOR",
+    "description": "Aprobar la publicación del recurso para confirmar la descarga",
+    "action": "APPROVE_RESOURCE"
+},
+{
+    "name": "VISUALIZADOR",
+    "description": "Realizar observaciones del recurso para modificación o mejora.",
+    "action": "SCORE_RESOURCE"
+},
+{
+    "name": "VISUALIZADOR",
+    "description": "Descargar las estadísticas de los recursos",
+    "action": "DOWNLOAD_STATISTICS"
+}

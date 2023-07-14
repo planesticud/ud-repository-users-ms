@@ -27,6 +27,12 @@ usersController.listUsers = async (req, res) => {
   }
   log.info(`listUsers ${JSON.stringify(where)} `)
   const users = await dbQueries.select('users', where)
+  if(users.length){
+    let wherePermisions = {'name': users[0].rol}
+    const permisions = await dbQueries.select('roles', wherePermisions)
+    users[0].permisions = permisions.map((permision) =>{ return  permision.action })
+  }
+
   res.json(users)
 }
 
